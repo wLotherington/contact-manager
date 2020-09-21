@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Manager</title>
+  <script src="/javascripts/jquery.js"></script>
+  <script src="/javascripts/handlebars.js"></script>
+  <script type="module" src="/javascripts/app.js"></script>
+  <script src="https://kit.fontawesome.com/a8d41cb996.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/stylesheets/reset.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <header>
+    <h1>CONTACT MANAGER</h1>
+    <p>Built with jQuery, Handlebars, FontAwesome</p>
+  </header>
+  
+  <main>
+    <div id="flex-container">
+      <nav>
+        <section id="controls">
+          <button id="add-contact"><i class="fas fa-user-plus"></i> Add Contact</button>
+          <button id="view-all-contacts"><i class="fas fa-users"></i> View All Contacts</button>
+        </section>
+        <section id="name-filter">
+          <h2>Filter by Name:</h2>
+          <input id="search-bar" type="text" placeholder="Search">
+        </section>
+        <section id="tag-filter">
+          <h2>Filter by Tag:</h2>
+          <ul>
+          </ul>
+        </section>
+      </nav>
+      <div>
+        <section id="container">
+        </section>
+        <section id="no-matches">
+          <h2>No contacts match your filter parameters.</h2>
+          <p>Search term: <span id="filter-term"></span></p>
+          <p>Tags: <span id="filter-tags"></span></p>
+        </section>
+        <section id="form">
+          <div>
+            <div></div>
+            <h2><span id="action"></span> Contact</h2>
+          </div>
+          <form>
+            <label for="form-name">Full name:</label>
+            <input id="form-name" type="text">
+            <label for="form-email">Email address:</label>
+            <input id="form-email" type="email">
+            <label for="form-phone">Telephone number:</label>
+            <input id="form-phone" type="tel">
+            <label for="form-tags">Tags:</label>
+            <input id="form-tags" type="text" placeholder="friend, family, student, etc.">
+            <div>
+              <input id="form-submit" type="submit">
+              <input id="form-cancel" type="button" value="Cancel">
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Developed by <a href="mailto:will.lotherington@hey.com" target="_blank">Will Lotherington</a> for the <a href="https://launchschool.com/" target="_blank">Launch School</a> JS239 Practice Project</p>
+  </footer>
+
+  <script id="tag-list-template" type="text/x-handlebars">
+    {{#each tags}}
+    <li>{{>tag}} ({{this.count}})</li>
+    {{/each}}
+  </script>
+
+  <script id="tag-template" type="text/x-handlebars">
+    <a href="#" class="tag {{this.class}}">{{this.name}}</a>
+  </script>
+
+  <script id="contacts-template" type="text/x-handlebars">
+    {{#each contacts}}
+    <article data-id="{{id}}">
+      <div>
+        <h2>{{full_name}}</h2>
+        <dl>
+          <dt>Phone Number:</dt>
+          <dd>{{phone_number}}</dd>
+        </dl>
+        <dl>
+          <dt>Email:</dt>
+          <dd><a href="mailto:{{email}}" target="_blank">{{email}}</a></dd>
+        </dl>
+        <dl>
+          <dt>Tags:</dt>
+          <dd class="tags">
+            {{#each tags}}
+            {{>tag}}
+            {{/each}}
+          </dd>
+        </dl>
+      </div>
+      <div class="buttons">
+        <button class="edit"><i class="fas fa-pencil-alt"></i> Edit</button>
+        <button class="delete"><i class="fas fa-trash-alt"></i> Delete</button>
+      </div>
+    </article>
+    {{/each}}
+  </script>
+</body>
+</html>

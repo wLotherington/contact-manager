@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "full_name": "Naveed Fida",
+    "email": "nf@example.com",
+    "phone_number": "12345678901",
+    "tags": "launch_school,ta"
+  },
+  {
+    "id": 2,
+    "full_name": "Victor Reyes",
+    "email": "vpr@example.com",
+    "phone_number": "09876543210",
+    "tags": "launch_school,ta"
+  },
+  {
+    "id": 3,
+    "full_name": "Pete Hanson",
+    "email": "ph@example.com",
+    "phone_number": "54321098761",
+    "tags": "launch_school,ta"
+  },
+  {
+    "full_name": "Will Lotherington",
+    "phone_number": "+1 (951) 775-9310",
+    "email": "will.lotherington@hey.com",
+    "tags": "chicago,family,launch_school,self,student,tomato",
+    "id": 4
+  },
+  {
+    "full_name": "Chih-te Zee",
+    "phone_number": "",
+    "email": "",
+    "tags": "student,ta,ucla",
+    "id": 5
+  },
+  {
+    "full_name": "Sarah Lotherington",
+    "phone_number": "",
+    "email": "sarah.lotherington@gmail.com",
+    "tags": "california,family",
+    "id": 6
+  },
+  {
+    "full_name": "Raymond Lotherington",
+    "phone_number": "",
+    "email": "Raymond.Lotherington@gmail.com",
+    "tags": "california,family",
+    "id": 7
+  },
+  {
+    "full_name": "Madeline Burnette",
+    "phone_number": "+1 (636) 485-7434",
+    "email": "mkburnette60@gmail.com",
+    "tags": "chicago,tomato",
+    "id": 8
+  },
+  {
+    "full_name": "Fred (Bear)",
+    "phone_number": "",
+    "email": "",
+    "tags": "cute,fuzzy",
+    "id": 9
+  },
+  {
+    "full_name": "Jeff Irvine",
+    "phone_number": "99999",
+    "email": "jeffisCool@gmail.com",
+    "tags": "adorable,cute,portland,programmer",
+    "id": 10
+  }
+]
