@@ -1,10 +1,24 @@
 # Contact Manager
 
+Try it here: [https://ls-contact-manager-will.herokuapp.com/](https://ls-contact-manager-will.herokuapp.com/)
+
+![](public/images/overview.png)
+
 ## Overview
-Contact manager application.
+### Contact manager application.
 * Leverages a node API server to manage contact data
-* allows for adding, deleting, and filtering contacts
-* tags can be entered as comma seperated values
+* Allows for adding, deleting, and filtering contacts
+* Tags can be entered as comma seperated values
+* Built using [jQuery](https://jquery.com/), [Handlebars](https://handlebarsjs.com/), [FontAwesome](https://fontawesome.com/)
+
+### View All Contacts
+![](public/images/overview.png)
+
+### Add Contact
+![](public/images/add.png)
+
+### Filter Contacts
+![](public/images/filter.png)
 
 ## Improvement Opportunities
 * Add form validation
