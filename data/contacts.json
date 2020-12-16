@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "full_name": "Harry Potter",
+    "phone_number": "",
+    "email": "harry.potter@hogwarts.edu",
+    "tags": "gryffindor,student",
+    "id": 1
+  },
+  {
+    "full_name": "Luna Lovegood",
+    "phone_number": "",
+    "email": "luna.lovegood@hogwarts.edu",
+    "tags": "ravenclaw,student",
+    "id": 2
+  },
+  {
+    "full_name": "Draco Malfoy",
+    "phone_number": "",
+    "email": "draco.malfoy@hogwarts.edu",
+    "tags": "slytherin,student",
+    "id": 3
+  },
+  {
+    "full_name": "Albus Dumbledor",
+    "phone_number": "",
+    "email": "albus.dumbledor@hogwarts.com",
+    "tags": "gryffindor,teacher",
+    "id": 4
+  }
+]
