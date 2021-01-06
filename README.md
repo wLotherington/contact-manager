@@ -4,6 +4,9 @@
 * **Stack:** `node`, `JavaScript`, `jQuery`, `Handlebars`, `FontAwesome`
 * **Feedback:** [Will.Lotherington@hey.com](mailto:will.lotherington@hey.com)
 
+### What is it?
+Simple filterable contact manager built with a node backend and JS/jQuery front end.
+
 ![](public/images/overview.png)
 
 ## Overview
