@@ -1,6 +1,6 @@
 # Contact Manager
 
-* **Try it out:** [Contact Manager](https://ls-contact-manager-will.herokuapp.com/)
+* **Try it out:** [https://contact-manager-wlotherington.herokuapp.com/](https://contact-manager-wlotherington.herokuapp.com/)
 * **Stack:** `node`, `JavaScript`, `jQuery`, `Handlebars`, `FontAwesome`
 * **Feedback:** [Will.Lotherington@hey.com](mailto:will.lotherington@hey.com)
 
